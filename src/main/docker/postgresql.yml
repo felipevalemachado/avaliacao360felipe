@@ -1,0 +1,12 @@
+version: '2'
+services:
+    avaliacao360felipe-postgresql:
+        container_name: avaliacao360felipe-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/avaliacao360felipe/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=avaliacao360felipe
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
